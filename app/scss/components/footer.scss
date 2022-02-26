@@ -9,21 +9,35 @@
     background-image: url('../images/bg-footer-top-mobile.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
-    top: -8%;
+    top: -6%;
     right: 0;
     bottom: 100%;
     left: 0;
 
     @include breakpoint(medium) {
       background-image: url('../images/bg-footer-top-desktop.svg');
-      top: -18%;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
+      top: -30%;
+      right: 0;
+      bottom: 100%;
+      left: 0;
     }
 
     @include breakpoint(large) {
       background-image: url('../images/bg-footer-top-desktop.svg');
-      top: -40%;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
+      top: -45%;
+      right: 0;
+      bottom: 100%;
+      left: 0;
     }
   }
 }

@@ -25,16 +25,23 @@
     background-image: url('../images/bg-section-top-mobile-1.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
-    top: -18%;
+    top: -15%;
     right: 0;
     bottom: 100%;
     left: 0;
 
     @include breakpoint(medium) {
       background-image: url('../images/bg-section-top-desktop-1.svg');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
       top: -25%;
+      right: 0;
+      bottom: 100%;
+      left: 0;
     }
   }
 
@@ -43,7 +50,7 @@
     background-image: url('../images/bg-section-bottom-mobile-1.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
     top: 100%;
     right: 0;
@@ -52,7 +59,14 @@
 
     @include breakpoint(medium) {
       background-image: url('../images/bg-section-bottom-desktop-1.svg');
-      bottom: -25%;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      bottom: -22%;
+      left: 0;
     }
   }
 }
@@ -67,16 +81,23 @@
     background-image: url('../images/bg-section-top-mobile-2.svg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
-    top: -18%;
+    top: -15%;
     right: 0;
     bottom: 100%;
     left: 0;
 
     @include breakpoint(medium) {
       background-image: url('../images/bg-section-top-desktop-2.svg');
-      top: -25%;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
+      top: -30%;
+      right: 0;
+      bottom: 100%;
+      left: 0;
     }
   }
 
@@ -94,7 +115,14 @@
 
     @include breakpoint(medium) {
       background-image: url('../images/bg-section-bottom-desktop-2.svg');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 100%;
+      right: 0;
       bottom: -27%;
+      left: 0;
     }
   }
 }

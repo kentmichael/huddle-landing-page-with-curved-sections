@@ -1,5 +1,9 @@
 @use '../util' as *;
 
+.footer-color {
+  background-color: var(--very-dk-cyan);
+}
+
 .footer-bg {
   width: 100%;
   height: rem(70);
@@ -10,6 +14,8 @@
   mask-repeat: no-repeat; 
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+  -webkit-mask-position: center;
+  mask-position: center;
 
   @include breakpoint(medium) {
     height: rem(100);
@@ -18,12 +24,8 @@
   }
 
   @include breakpoint(large) {
-    height: rem(130);
+    height: rem(160);
   }
-}
-
-footer {
-  background-color: var(--very-dk-cyan);
 }
 
 .footer {

@@ -1,6 +1,6 @@
 @use '../util' as *;
 
-.footer-color {
+footer {
   background-color: var(--very-dk-cyan);
 }
 
@@ -12,19 +12,21 @@
   mask-image: url('../images/bg-footer-top-mobile.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   -webkit-mask-position: center;
   mask-position: center;
 
   @include breakpoint(medium) {
-    height: rem(100);
+    height: rem(125);
+    width: 100%;
     -webkit-mask-image: url('../images/bg-footer-top-desktop.svg');
     mask-image: url('../images/bg-footer-top-desktop.svg');
   }
 
   @include breakpoint(large) {
-    height: rem(160);
+    height: rem(170);
+    width: 100%;
   }
 }
 

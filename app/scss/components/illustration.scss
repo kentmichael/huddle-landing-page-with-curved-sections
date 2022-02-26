@@ -58,13 +58,17 @@
 .bg-1-top {
   width: 100%;
   height: rem(100);
-  background-image: url('../images/bg-section-top-mobile-1.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 100%;
+  background-color: var(--very-pl-blue);
+  -webkit-mask-image: url('../images/bg-section-top-mobile-1.svg');
+  mask-image: url('../images/bg-section-top-mobile-1.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   
   @include breakpoint(medium) {
-    background-image: url('../images/bg-section-top-desktop-1.svg');
+    -webkit-mask-image: url('../images/bg-section-top-desktop-1.svg');
+    mask-image: url('../images/bg-section-top-desktop-1.svg');
   }
 
   @include breakpoint(large) {
@@ -75,16 +79,20 @@
 .bg-1-bottom {
   width: 100%;
   height: rem(60);
-  background-image: url('../images/bg-section-bottom-mobile-1.svg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% 100%;
+  background-color: var(--very-pl-blue);
+  -webkit-mask-image: url('../images/bg-section-bottom-mobile-1.svg');
+  mask-image: url('../images/bg-section-bottom-mobile-1.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
-    background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    -webkit-mask-image: url('../images/bg-section-bottom-desktop-1.svg');
+    mask-image: url('../images/bg-section-bottom-desktop-1.svg');
   }
 
   @include breakpoint(large) {
@@ -96,13 +104,17 @@
 .bg-2-top {
   width: 100%;
   height: rem(100);
-  background-image: url('../images/bg-section-top-mobile-2.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 100%;
+  background-color: var(--very-pl-blue);
+  -webkit-mask-image: url('../images/bg-section-top-mobile-2.svg');
+  mask-image: url('../images/bg-section-top-mobile-2.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   
   @include breakpoint(medium) {
-    background-image: url('../images/bg-section-top-desktop-2.svg');
+    -webkit-mask-image: url('../images/bg-section-top-desktop-2.svg');
+    mask-image: url('../images/bg-section-top-desktop-2.svg');
   }
 
   @include breakpoint(large) {
@@ -113,16 +125,20 @@
 .bg-2-bottom {
   width: 100%;
   height: rem(80);
-  background-image: url('../images/bg-section-bottom-mobile-2.svg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% 100%;
+  background-color: var(--very-pl-blue);
+  -webkit-mask-image: url('../images/bg-section-bottom-mobile-2.svg');
+  mask-image: url('../images/bg-section-bottom-mobile-2.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
-    background-image: url('../images/bg-section-bottom-desktop-2.svg');
+    -webkit-mask-image: url('../images/bg-section-bottom-desktop-2.svg');
+    mask-image: url('../images/bg-section-bottom-desktop-2.svg');
   }
 
   @include breakpoint(large) {

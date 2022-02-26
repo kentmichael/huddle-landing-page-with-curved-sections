@@ -3,14 +3,18 @@
 .footer-bg {
   width: 100%;
   height: rem(70);
-  background-image: url('../images/bg-footer-top-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% 100%;
+  background-color: var(--very-dk-cyan);
+  -webkit-mask-image: url('../images/bg-footer-top-mobile.svg');
+  mask-image: url('../images/bg-footer-top-mobile.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 
   @include breakpoint(medium) {
     height: rem(100);
-    background-image: url('../images/bg-footer-top-desktop.svg');
+    -webkit-mask-image: url('../images/bg-footer-top-desktop.svg');
+    mask-image: url('../images/bg-footer-top-desktop.svg');
   }
 
   @include breakpoint(large) {

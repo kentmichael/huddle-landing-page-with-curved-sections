@@ -65,14 +65,20 @@
   mask-repeat: no-repeat; 
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+  -webkit-mask-position: center;
+  mask-position: center;
   
   @include breakpoint(medium) {
+    width: 100%;
+    height: rem(130);
     -webkit-mask-image: url('../images/bg-section-top-desktop-1.svg');
     mask-image: url('../images/bg-section-top-desktop-1.svg');
-  }
-
-  @include breakpoint(large) {
-    height: rem(120);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    mask-position: center;
   }
 }
 
@@ -84,13 +90,16 @@
   mask-image: url('../images/bg-section-bottom-mobile-1.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
+    width: 100%;
     -webkit-mask-image: url('../images/bg-section-bottom-desktop-1.svg');
     mask-image: url('../images/bg-section-bottom-desktop-1.svg');
   }
@@ -98,6 +107,7 @@
   @include breakpoint(large) {
     margin-bottom: rem(100);
     height: rem(150);
+    width: 100%;
   }
 }
 
@@ -109,16 +119,21 @@
   mask-image: url('../images/bg-section-top-mobile-2.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
   
   @include breakpoint(medium) {
     -webkit-mask-image: url('../images/bg-section-top-desktop-2.svg');
     mask-image: url('../images/bg-section-top-desktop-2.svg');
+    width: 100%;
+    height: rem(100);
   }
 
   @include breakpoint(large) {
     height: rem(120);
+    width: 100%;
   }
 }
 
@@ -130,13 +145,16 @@
   mask-image: url('../images/bg-section-bottom-mobile-2.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: center;
+  mask-position: center;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
+    width: 100%;
     -webkit-mask-image: url('../images/bg-section-bottom-desktop-2.svg');
     mask-image: url('../images/bg-section-bottom-desktop-2.svg');
   }
@@ -144,5 +162,6 @@
   @include breakpoint(large) {
     margin-bottom: rem(100);
     height: rem(150);
+    width: 100%;
   }
 }

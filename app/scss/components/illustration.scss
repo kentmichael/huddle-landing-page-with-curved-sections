@@ -75,8 +75,8 @@
     mask-image: url('../images/bg-section-top-desktop-1.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat; 
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
     -webkit-mask-position: center;
     mask-position: center;
   }

@@ -1,133 +1,7 @@
 @use '../util' as *;
 
-.two-column {
-  gap: rem(150);
-  margin-bottom: rem(150);
-
-  @include breakpoint(medium) {
-    margin-bottom: rem(200);
-  }
-
-  @include breakpoint(large) {
-    gap: rem(200);
-    margin-bottom: rem(300);
-  }
-}
-
-.bg1 {
-  position: relative;
-  padding-top: rem(70);
-  padding-bottom: rem(70);
-  background-color: var(--very-pl-blue);
-
-  &::before {
-    content: '';
-    background-image: url('../images/bg-section-top-mobile-1.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    position: absolute;
-    top: -15%;
-    right: 0;
-    bottom: 100%;
-    left: 0;
-
-    @include breakpoint(medium) {
-      background-image: url('../images/bg-section-top-desktop-1.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      position: absolute;
-      top: -25%;
-      right: 0;
-      bottom: 100%;
-      left: 0;
-    }
-  }
-
-  &::after {
-    content: '';
-    background-image: url('../images/bg-section-bottom-mobile-1.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    bottom: -10%;
-    left: 0;
-
-    @include breakpoint(medium) {
-      background-image: url('../images/bg-section-bottom-desktop-1.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      bottom: -22%;
-      left: 0;
-    }
-  }
-}
-
-.bg2 {
-  position: relative;
-  padding-bottom: 100px;
-  background-color: var(--very-pl-blue);
-
-  &::before {
-    content: '';
-    background-image: url('../images/bg-section-top-mobile-2.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    position: absolute;
-    top: -15%;
-    right: 0;
-    bottom: 100%;
-    left: 0;
-
-    @include breakpoint(medium) {
-      background-image: url('../images/bg-section-top-desktop-2.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      position: absolute;
-      top: -30%;
-      right: 0;
-      bottom: 100%;
-      left: 0;
-    }
-  }
-
-  &::after {
-    content: '';
-    background-image: url('../images/bg-section-bottom-mobile-2.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100%;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    bottom: -20%;
-    left: 0;
-
-    @include breakpoint(medium) {
-      background-image: url('../images/bg-section-bottom-desktop-2.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: 100% 100%;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      bottom: -27%;
-      left: 0;
-    }
-  }
-}
-
 .illustration {
+  padding-top: rem(50);
   gap: rem(80);
 
   &__img {
@@ -162,5 +36,93 @@
     &-item2 {
       order: 1;
     }
+  }
+
+  &-sec {
+    margin-bottom: rem(80);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(90);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: rem(100);
+    }
+  }
+}
+
+.bg-color {
+  background-color: var(--very-pl-blue);
+}
+
+.bg-1-top {
+  height: rem(100);
+  background-image: url('../images/bg-section-top-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  
+  @include breakpoint(medium) {
+    background-image: url('../images/bg-section-top-desktop-1.svg');
+  }
+
+  @include breakpoint(large) {
+    height: rem(120);
+  }
+}
+
+.bg-1-bottom {
+  height: rem(60);
+  background-image: url('../images/bg-section-bottom-mobile-1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-bottom: rem(80);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(90);
+    height: rem(100);
+    background-image: url('../images/bg-section-bottom-desktop-1.svg');
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(100);
+    height: rem(150);
+  }
+}
+
+.bg-2-top {
+  height: rem(100);
+  background-image: url('../images/bg-section-top-mobile-2.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  
+  @include breakpoint(medium) {
+    background-image: url('../images/bg-section-top-desktop-2.svg');
+  }
+
+  @include breakpoint(large) {
+    height: rem(120);
+  }
+}
+
+.bg-2-bottom {
+  height: rem(80);
+  background-image: url('../images/bg-section-bottom-mobile-2.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-bottom: rem(80);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(90);
+    height: rem(100);
+    background-image: url('../images/bg-section-bottom-desktop-2.svg');
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(100);
+    height: rem(150);
   }
 }

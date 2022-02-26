@@ -1,45 +1,28 @@
 @use '../util' as *;
 
 .footer-bg {
-  position: relative;
-  background-color: var(--very-dk-cyan);
+  height: rem(70);
+  background-image: url('../images/bg-footer-top-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 
-  &::before {
-    content: '';
-    background-image: url('../images/bg-footer-top-mobile.svg');
+  @include breakpoint(medium) {
+    height: rem(100);
+    background: none;
+    background-image: url('../images/bg-footer-top-desktop.svg');
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    position: absolute;
-    top: -6%;
-    right: 0;
-    bottom: 100%;
-    left: 0;
-
-    @include breakpoint(medium) {
-      background-image: url('../images/bg-footer-top-desktop.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      position: absolute;
-      top: -30%;
-      right: 0;
-      bottom: 100%;
-      left: 0;
-    }
-
-    @include breakpoint(large) {
-      background-image: url('../images/bg-footer-top-desktop.svg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      position: absolute;
-      top: -45%;
-      right: 0;
-      bottom: 100%;
-      left: 0;
-    }
+    background-position: center center;
+    background-size: 100% 100%;
   }
+
+  @include breakpoint(large) {
+    height: rem(130);
+  }
+}
+
+footer {
+  background-color: var(--very-dk-cyan);
 }
 
 .footer {

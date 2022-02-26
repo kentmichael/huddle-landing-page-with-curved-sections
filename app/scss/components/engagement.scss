@@ -2,15 +2,10 @@
 
 .engagement {
   gap: rem(90);
-  margin-bottom: rem(130);
 
   @include breakpoint(medium) {
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  @include breakpoint(large) {
-    margin-bottom: rem(250);
   }
 
   > * {

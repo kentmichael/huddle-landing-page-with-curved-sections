@@ -51,18 +51,31 @@
     line-height: 1.8;
   }
 
+  &-form {
+    gap: rem(10);
+
+    @include breakpoint(large) {
+      flex-direction: row;
+      gap: rem(30);
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+
   &__email {
-    width: 100%;
-    margin-bottom: rem(10);
     border-radius: rem(5);
     border: none;
     padding: rem(15);
     font-size: 1rem;
+
+    @include breakpoint(large) {
+      flex: 2;
+    }
   }
 
   &__submit {
-    width: 50%;
-    float: right;
     color: var(--white);
     background-color: var(--pink);
     border-radius: rem(5);
@@ -76,17 +89,15 @@
       cursor: pointer;
       background-color: var(--lt-pink);
     }
-  }
 
-  &-clearfix {
-    content: '';
-    clear: both;
-    display: table;
+    @include breakpoint(large) {
+      flex: 1;
+    }
   }
   
   @include breakpoint(medium) {
     flex-direction: row;
-    gap: rem(200);
+    gap: rem(100);
 
     &-item1 {
       order: 2;

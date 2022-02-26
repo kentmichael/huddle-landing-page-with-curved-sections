@@ -60,15 +60,25 @@
   height: rem(100);
   background-image: url('../images/bg-section-top-mobile-1.svg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom;
   background-size: 100% 100%;
+  background-origin: border-box;
   
   @include breakpoint(medium) {
     background-image: url('../images/bg-section-top-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    background-origin: border-box;
   }
 
   @include breakpoint(large) {
     height: rem(120);
+    background-image: url('../images/bg-section-top-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    background-origin: border-box;
   }
 }
 
@@ -77,19 +87,29 @@
   height: rem(60);
   background-image: url('../images/bg-section-bottom-mobile-1.svg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top;
   background-size: 100% 100%;
+  background-origin: border-box;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
     background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    background-origin: border-box;
   }
 
   @include breakpoint(large) {
     margin-bottom: rem(100);
     height: rem(150);
+    background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    background-origin: border-box;
   }
 }
 
@@ -98,15 +118,25 @@
   height: rem(100);
   background-image: url('../images/bg-section-top-mobile-2.svg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-origin: border-box;
   
   @include breakpoint(medium) {
     background-image: url('../images/bg-section-top-desktop-2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-origin: border-box;
   }
 
   @include breakpoint(large) {
     height: rem(120);
+    background-image: url('../images/bg-section-top-desktop-2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-origin: border-box;
   }
 }
 
@@ -115,18 +145,28 @@
   height: rem(80);
   background-image: url('../images/bg-section-bottom-mobile-2.svg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
+  background-position: top;
+  background-size: cover;
+  background-origin: border-box;
   margin-bottom: rem(80);
 
   @include breakpoint(medium) {
     margin-bottom: rem(90);
     height: rem(100);
     background-image: url('../images/bg-section-bottom-desktop-2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-origin: border-box;
   }
 
   @include breakpoint(large) {
     margin-bottom: rem(100);
     height: rem(150);
+    background-image: url('../images/bg-section-bottom-desktop-2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-origin: border-box;
   }
 }

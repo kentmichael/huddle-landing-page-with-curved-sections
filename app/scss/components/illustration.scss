@@ -57,20 +57,20 @@
 
 .bg-1-top {
   width: 100%;
-  height: rem(100);
+  height: rem(150);
   background-color: var(--very-pl-blue);
   -webkit-mask-image: url('../images/bg-section-top-mobile-1.svg');
   mask-image: url('../images/bg-section-top-mobile-1.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat; 
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
   -webkit-mask-position: center;
   mask-position: center;
   
   @include breakpoint(medium) {
     width: 100%;
-    height: rem(130);
+    height: rem(150);
     -webkit-mask-image: url('../images/bg-section-top-desktop-1.svg');
     mask-image: url('../images/bg-section-top-desktop-1.svg');
     -webkit-mask-repeat: no-repeat;
@@ -84,7 +84,7 @@
 
 .bg-1-bottom {
   width: 100%;
-  height: rem(60);
+  height: rem(150);
   background-color: var(--very-pl-blue);
   -webkit-mask-image: url('../images/bg-section-bottom-mobile-1.svg');
   mask-image: url('../images/bg-section-bottom-mobile-1.svg');
@@ -94,26 +94,18 @@
   mask-size: cover;
   -webkit-mask-position: center;
   mask-position: center;
-  margin-bottom: rem(80);
 
   @include breakpoint(medium) {
-    margin-bottom: rem(90);
-    height: rem(100);
+    height: rem(150);
     width: 100%;
     -webkit-mask-image: url('../images/bg-section-bottom-desktop-1.svg');
     mask-image: url('../images/bg-section-bottom-desktop-1.svg');
-  }
-
-  @include breakpoint(large) {
-    margin-bottom: rem(100);
-    height: rem(150);
-    width: 100%;
   }
 }
 
 .bg-2-top {
   width: 100%;
-  height: rem(100);
+  height: rem(150);
   background-color: var(--very-pl-blue);
   -webkit-mask-image: url('../images/bg-section-top-mobile-2.svg');
   mask-image: url('../images/bg-section-top-mobile-2.svg');
@@ -128,12 +120,7 @@
     -webkit-mask-image: url('../images/bg-section-top-desktop-2.svg');
     mask-image: url('../images/bg-section-top-desktop-2.svg');
     width: 100%;
-    height: rem(100);
-  }
-
-  @include breakpoint(large) {
-    height: rem(120);
-    width: 100%;
+    height: rem(150);
   }
 }
 
@@ -149,19 +136,11 @@
   mask-size: cover;
   -webkit-mask-position: center;
   mask-position: center;
-  margin-bottom: rem(80);
 
   @include breakpoint(medium) {
-    margin-bottom: rem(90);
-    height: rem(100);
+    height: rem(150);
     width: 100%;
     -webkit-mask-image: url('../images/bg-section-bottom-desktop-2.svg');
     mask-image: url('../images/bg-section-bottom-desktop-2.svg');
-  }
-
-  @include breakpoint(large) {
-    margin-bottom: rem(100);
-    height: rem(150);
-    width: 100%;
   }
 }

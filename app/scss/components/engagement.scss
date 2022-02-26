@@ -1,0 +1,41 @@
+@use '../util' as *;
+
+.engagement {
+  gap: rem(90);
+  margin-bottom: rem(130);
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(250);
+  }
+
+  > * {
+    min-width: rem(180);
+  }
+
+  &__icon {
+    display: block;
+    margin-bottom: rem(10);
+    margin-left: rem(5);
+  }
+
+  &__data {
+    display: block;
+    margin-bottom: rem(5);
+    font-family: var(--font-heading);
+    font-size: rem(60);
+    font-weight: 700;
+
+    @include breakpoint(medium) {
+      font-size: rem(80);
+    }
+
+    @include breakpoint(large) {
+      font-size: rem(100);
+    }
+  }
+}

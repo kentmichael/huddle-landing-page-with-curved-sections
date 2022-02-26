@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/convo.scss","components/convo.css"],"names":[],"mappings":"AAEA,QAEE,sBAAA,CADA,UCAF","file":"components/convo.css","sourcesContent":["@use '../util' as *;\r\n\r\n.mockup {\r\n  width: 100%;\r\n  margin-bottom: rem(110);\r\n}",".mockup {\n  width: 100%;\n  margin-bottom: 6.875rem;\n}"]}

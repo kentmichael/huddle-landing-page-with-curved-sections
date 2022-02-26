@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/mockup.scss","components/mockup.css"],"names":[],"mappings":"AAIE,aACE,UCHJ","file":"components/mockup.css","sourcesContent":["@use '../util' as *;\r\n\r\n.mockup {\r\n  \r\n  &__img {\r\n    width: 100%;\r\n  }\r\n}",".mockup__img {\n  width: 100%;\n}"]}

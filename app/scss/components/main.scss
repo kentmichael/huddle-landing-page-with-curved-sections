@@ -1,0 +1,25 @@
+@use '../util' as *;
+
+.main {
+  margin-bottom: rem(150);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(220);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(320);
+  }
+
+  > * {
+    margin-bottom: rem(90);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(100);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: rem(150);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use '../util' as *;
+
+.nav {
+  margin-bottom: rem(100);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  
+  
+  @include breakpoint(medium) {
+    margin-bottom: rem(110);
+    padding-top: rem(48);
+    padding-bottom: rem(48);
+  }
+  
+
+  &__logo {
+    display: inline-block;
+    font-size: 0;
+
+    img {
+      width: rem(140);
+      height: rem(24);
+
+      @include breakpoint(medium) {
+        width: rem(165);
+        height: rem(28);
+      }
+      
+      @include breakpoint(large) {
+        width: rem(235);
+        height: rem(37);
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    border: rem(1) solid;
+    border-radius: rem(50);
+    padding: rem(6) rem(20);
+    font-size: rem(12);
+    color: var(--lt-pink);
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      border: rem(1) solid var(--lt-pink);
+      background-color: var(--lt-pink);
+      color: var(--white);
+    }
+
+    @include breakpoint(medium) {
+      border-radius: rem(50);
+      padding: rem(10) rem(30);
+      font-size: 1rem;
+    }
+
+  }
+}

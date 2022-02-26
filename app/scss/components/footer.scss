@@ -1,0 +1,130 @@
+@use '../util' as *;
+
+.footer-bg {
+  position: relative;
+  background-color: var(--very-dk-cyan);
+
+  &::before {
+    content: '';
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -8%;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-footer-top-desktop.svg');
+      top: -18%;
+    }
+
+    @include breakpoint(large) {
+      background-image: url('../images/bg-footer-top-desktop.svg');
+      top: -40%;
+    }
+  }
+}
+
+.footer {
+  padding-top: rem(80);
+  padding-bottom: rem(50);
+  gap: rem(80);
+  color: var(--white);
+  font-weight: 600;
+  text-align: left;
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__header {
+    font-family: var(--font-heading);
+    font-size: rem(20);
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-bottom: rem(30);
+    line-height: 1.8;
+  }
+
+  &__email {
+    width: 100%;
+    margin-bottom: rem(10);
+    border-radius: rem(5);
+    border: none;
+    padding: rem(15);
+    font-size: 1rem;
+  }
+
+  &__submit {
+    width: 50%;
+    float: right;
+    color: var(--white);
+    background-color: var(--pink);
+    border-radius: rem(5);
+    border: none;
+    padding: rem(15);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--lt-pink);
+    }
+  }
+
+  &-clearfix {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
+  @include breakpoint(medium) {
+    flex-direction: row;
+    gap: rem(200);
+
+    &-item1 {
+      order: 2;
+    }
+
+    &-item2 {
+      order: 1;
+    }
+  }
+
+  &__phonenum {
+    display: block;
+    margin-bottom: rem(10);
+
+    &::before {
+      content: url('../images/icon-phone.svg');
+      margin-right: rem(20);
+    }
+  }
+
+  &__emailadd {
+    display: block;
+    margin-bottom: rem(30);
+
+    &::before {
+      content: url('../images/icon-email.svg');
+      margin-right: rem(20);
+    }
+  }
+
+  &__links {
+    display: inline-block;
+    font-size: rem(30);
+    color: var(--white);
+    
+    &:not(:last-child) {
+      margin-right: rem(15);
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+@use '../util' as *;
+
+.getstarted {
+
+  > h1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: rem(32);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(30);
+      font-size: rem(36);
+    }
+
+    @include breakpoint(large) {
+      font-size: rem(44);
+    }
+  }
+
+  > p {
+    margin-bottom: rem(60);
+    line-height: 1.5;
+
+    @include breakpoint(medium) {
+      max-width: rem(600);
+      margin: 0 auto rem(60);
+      font-size: rem(20);
+    }
+  }
+
+  > a {
+    display: inline-block;
+    padding: rem(18) rem(50);
+    border: rem(1) solid var(--pink);
+    border-radius: rem(80);
+    font-size: rem(14);
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--pink);
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      border: rem(1) solid var(--pink);
+      color: var(--pink);
+      background-color: var(--white);
+    }
+
+    @include breakpoint(medium) {
+      padding: rem(20) rem(80);
+      border-radius: rem(80);
+      font-size: rem(22);
+    }
+  }
+
+  > span {
+    display: block;
+    font-size: rem(35);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: rem(30);
+
+    @include breakpoint(medium) {
+      font-size: rem(30);
+    }
+
+    @include breakpoint(large) {
+      font-size: rem(35);
+    }
+  }
+}

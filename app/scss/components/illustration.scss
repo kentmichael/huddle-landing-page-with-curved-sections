@@ -1,0 +1,138 @@
+@use '../util' as *;
+
+.two-column {
+  gap: rem(150);
+  margin-bottom: rem(150);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(200);
+  }
+
+  @include breakpoint(large) {
+    gap: rem(200);
+    margin-bottom: rem(300);
+  }
+}
+
+.bg1 {
+  position: relative;
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+  background-color: var(--very-pl-blue);
+
+  &::before {
+    content: '';
+    background-image: url('../images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -18%;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-section-top-desktop-1.svg');
+      top: -25%;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: -10%;
+    left: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-section-bottom-desktop-1.svg');
+      bottom: -25%;
+    }
+  }
+}
+
+.bg2 {
+  position: relative;
+  padding-bottom: 100px;
+  background-color: var(--very-pl-blue);
+
+  &::before {
+    content: '';
+    background-image: url('../images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -18%;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-section-top-desktop-2.svg');
+      top: -25%;
+    }
+  }
+
+  &::after {
+    content: '';
+    background-image: url('../images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: -20%;
+    left: 0;
+
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-section-bottom-desktop-2.svg');
+      bottom: -27%;
+    }
+  }
+}
+
+.illustration {
+  gap: rem(80);
+
+  &__img {
+    width: 100%;
+  }
+
+  &__header {
+    font-size: rem(25);
+    font-family: var(--font-heading);
+
+    @include breakpoint(medium) {
+      font-size: rem(30);
+    }
+  }
+
+  &__content {
+
+    @include breakpoint(medium) {
+      font-size: rem(16);
+    }
+  }
+
+  @include breakpoint(medium) {
+    gap: rem(90);
+    flex-direction: row;
+    text-align: left;
+
+    &-item1 {
+      order: 2;
+    }
+
+    &-item2 {
+      order: 1;
+    }
+  }
+}

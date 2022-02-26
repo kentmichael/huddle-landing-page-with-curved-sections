@@ -1,0 +1,40 @@
+@use '../util' as *;
+
+.container {
+	padding: 0 rem(40);
+  max-width: rem(1300);
+	margin: 0 auto;
+	
+  &-md {
+    max-width: rem(1000);
+	  margin: 0 auto;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-row {
+    flex-direction: row;
+  }
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-ai-s {
+    align-items: flex-start;
+  }
+}

@@ -1,6 +1,7 @@
 @use '../util' as *;
 
 .footer-bg {
+  width: 100%;
   height: rem(70);
   background-image: url('../images/bg-footer-top-mobile.svg');
   background-repeat: no-repeat;

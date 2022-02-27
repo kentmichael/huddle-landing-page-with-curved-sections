@@ -1,19 +1,40 @@
 @use '../util' as *;
 
 .getstarted {
+  margin-bottom: rem(100);
 
-  > h1 {
+  @include breakpoint(medium) {
+    margin-bottom: rem(110);
+  }
+
+  &__header {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: rem(32);
 
-    @include breakpoint(medium) {
-      margin-bottom: rem(30);
-      font-size: rem(36);
+    &--big {
+      font-size: rem(32);
+
+      @include breakpoint(medium) {
+        margin-bottom: rem(30);
+        font-size: rem(36);
+      }
+  
+      @include breakpoint(large) {
+        font-size: rem(44);
+      }
     }
 
-    @include breakpoint(large) {
-      font-size: rem(44);
+    &--sm {
+      font-size: rem(25);
+      margin-bottom: rem(30);
+
+      @include breakpoint(medium) {
+        font-size: rem(30);
+      }
+
+      @include breakpoint(large) {
+        font-size: rem(35);
+      }
     }
   }
 
@@ -52,19 +73,15 @@
     }
   }
 
-  > span {
-    display: block;
-    font-size: rem(35);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    margin-bottom: rem(30);
+  &-two {
+    margin-bottom: rem(200);
 
     @include breakpoint(medium) {
-      font-size: rem(30);
+      margin-bottom: rem(300);
     }
 
     @include breakpoint(large) {
-      font-size: rem(35);
+      margin-bottom: rem(350);
     }
   }
 }

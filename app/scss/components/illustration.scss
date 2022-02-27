@@ -25,8 +25,9 @@
   }
 
   @include breakpoint(medium) {
-    gap: rem(90);
+    display: flex;
     flex-direction: row;
+    gap: rem(90);
     text-align: left;
 
     &-item1 {
@@ -118,7 +119,7 @@
   }
 }
 
-.bg-2-bottom {
+.bg-2-bot {
   width: 100%;
   height: rem(80);
   background-color: var(--very-pl-blue);
@@ -130,11 +131,13 @@
   mask-size: cover;
   -webkit-mask-position: center;
   mask-position: center;
+  margin-bottom: rem(100);
 
   @include breakpoint(medium) {
     height: rem(150);
     width: 100%;
     -webkit-mask-image: url('../images/bg-section-bottom-desktop-2.svg');
     mask-image: url('../images/bg-section-bottom-desktop-2.svg');
+    margin-bottom: rem(110);
   }
 }

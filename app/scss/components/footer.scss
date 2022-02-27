@@ -2,38 +2,35 @@
 
 footer {
   background-color: var(--very-dk-cyan);
-}
+  position: relative;
 
-.footer-bg {
-  width: 100%;
-  height: rem(70);
-  background-color: var(--very-dk-cyan);
-  -webkit-mask-image: url('../images/bg-footer-top-mobile.svg');
-  mask-image: url('../images/bg-footer-top-mobile.svg');
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat; 
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  -webkit-mask-position: center;
-  mask-position: center;
-
-  @include breakpoint(medium) {
-    height: rem(125);
+  &::before {
+    content: '';
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
     width: 100%;
-    -webkit-mask-image: url('../images/bg-footer-top-desktop.svg');
-    mask-image: url('../images/bg-footer-top-desktop.svg');
-  }
+    height: rem(80);
+    z-index: -1;
 
-  @include breakpoint(large) {
-    height: rem(170);
-    width: 100%;
+    @include breakpoint(medium) {
+      background-image: url('../images/bg-footer-top-desktop.svg');
+      width: 100%;
+      height: rem(170);
+    }
   }
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(80);
   padding-top: rem(80);
   padding-bottom: rem(50);
-  gap: rem(80);
   color: var(--white);
   font-weight: 600;
   text-align: left;
@@ -54,6 +51,8 @@ footer {
   }
 
   &-form {
+    display: flex;
+    flex-direction: column;
     gap: rem(10);
 
     @include breakpoint(large) {
